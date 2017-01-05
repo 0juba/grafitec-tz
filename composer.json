@@ -1,0 +1,12 @@
+{
+  "name": "tz/grafitec",
+  "description": "Тестовое задание",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Guba Andrei",
+      "email": "xg.andrew@gmail.com"
+    }
+  ]
+}
