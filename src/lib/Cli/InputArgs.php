@@ -1,5 +1,7 @@
 <?php
 
+namespace TZ\Cli;
+
 class InputArgs
 {
     private $rawArgs;
