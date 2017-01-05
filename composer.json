@@ -8,5 +8,10 @@
       "name": "Guba Andrei",
       "email": "xg.andrew@gmail.com"
     }
-  ]
+  ],
+  "autoload": {
+    "psr-4": {
+      "TZ\\Lib": "src/lib"
+    }
+  }
 }
