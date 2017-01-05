@@ -54,7 +54,7 @@ class FibonacciNumbersChecker implements SequenceCheckerInterface
 
     private function isPerfectSquare($number)
     {
-        if (0 < $number) {
+        if (0 > $number) {
             throw new \InvalidArgumentException('Number should be greater or equal 0.');
         }
 
