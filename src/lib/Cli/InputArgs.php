@@ -1,6 +1,6 @@
 <?php
 
-namespace TZ\Cli;
+namespace TZ\Lib\Cli;
 
 class InputArgs
 {
