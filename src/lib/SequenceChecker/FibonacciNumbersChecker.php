@@ -60,6 +60,6 @@ class FibonacciNumbersChecker implements SequenceCheckerInterface
 
         $s = sqrt($number);
 
-        return $s * $s === $number;
+        return $s * $s === (float)$number;
     }
 }

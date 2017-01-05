@@ -9,13 +9,23 @@ class NumericSequence implements Sequence
     public static function createFromString($stringSequence, $delimiter = ',')
     {
         $sequence = new static();
-        $sequence->numbers = array_map('trim', explode($delimiter, $stringSequence));
+        $numbers = array_map('trim', explode($delimiter, $stringSequence));
 
-        foreach ($sequence->numbers as $number) {
+        foreach ($numbers as $i => $number) {
             if (!is_numeric($number)) {
                 throw new \Exception(sprintf('Invalid value "%s". Only numbers allowed.', $number));
             }
+
+            if (false !== strpos($number, '.')) {
+                $number = (float)$number;
+            } else {
+                $number = (int)$number;
+            }
+
+            $numbers[$i] = $number;
         }
+
+        $sequence->numbers = $numbers;
 
         return $sequence;
     }
