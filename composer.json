@@ -13,5 +13,13 @@
     "psr-4": {
       "TZ\\Lib\\": "src/lib"
     }
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php bin/install.php"
+    ],
+    "post-update-cmd": [
+      "php bin/install.php"
+    ]
   }
 }
